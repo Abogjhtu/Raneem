@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>لعبة رنيم ❤️</title>
+<style>
+body{font-family:Arial;text-align:center;background:#ffe4ef;padding:40px;overflow:hidden}
+button{padding:12px 24px;font-size:22px;border:none;border-radius:14px;margin:10px;cursor:pointer}
+.yes{background:#ff4da6;color:white}
+.no{background:#ddd}
+#box{max-width:700px;margin:auto}
+</style>
+</head>
+<body>
+<div id="box">
+<h1>❤️ إلى رنيم ❤️</h1>
+<h2>عندي سؤال صغير... بتحبيني؟ 🥺</h2>
+<button class="yes" onclick="yes1()">نعم ❤️</button>
+<button class="no" onclick="no1()">لا 😅</button>
+</div>
+
+<script>
+function yes1(){
+document.getElementById('box').innerHTML=`
+<h2>💖 وأنا كمان بحبك 💖</h2>
+<p>وجودك بيخلي اليوم أحلى 🌹</p>
+<button class="yes" onclick="msg()">افتحي الرسالة 💌</button>`;
+}
+
+function msg(){
+document.getElementById('box').innerHTML=`
+<h2>❤️ إلى رنيم ❤️</h2>
+<p>من يوم ما عرفتك صار في أشياء صغيرة تسعدني أكثر...</p>
+<p>مثل لما أشوف اسمك أو توصلني رسالة منك 🌷</p>
+<p>ضحكتك حلوة، وأسلوبك أحلى، ولطافتك صعب تنوصف بالكلمات ✨</p>
+<p>ولو سألوني شو أحلى شيء شفته اليوم، أقول أي شيء فيه اسم رنيم ❤️</p>
+<p>أتمنى تظلي مبتسمة دائماً 🌹</p>
+<h2>❤️ رنيم... وجودك جميل أكثر مما تتخيلين ❤️</h2>`;
+}
+
+function no1(){
+document.getElementById('box').innerHTML=`
+<h1>😢</h1>
+<h2>جد؟</h2>
+<button class="no" onclick="no2()">لا</button>`;
+}
+
+function no2(){
+document.getElementById('box').innerHTML=`
+<h1>🥺</h1>
+<h2>متأكدة؟</h2>
+<button class="no" onclick="no3()">لا</button>
+<button class="yes" onclick="yes1()">يمكن نعم ❤️</button>`;
+}
+
+function no3(){
+document.getElementById('box').innerHTML=`
+<h1>😭</h1>
+<h2>آخر فرصة...</h2>
+<button class="yes" onclick="yes1()">طيب بحبك ❤️</button>`;
+}
+</script>
+</body>
+</html>
